@@ -90,7 +90,7 @@
 			}
 		}else{ 
 
-			if($oldTableName!=''){ // if we have a table rename query
+			if($oldTableName!=''){ 
 				if($ro=@db_query("select count(1) from `$oldTableName`")){ 
 					$renameQuery=array_shift($arrAlter); 
 
