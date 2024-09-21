@@ -104,7 +104,7 @@
 
 					if(is_array($arrAlter)) setupTable($tableName, $createSQL, false, $arrAlter); // execute Alter queries on renamed table ...
 				}else{ 
-					setupTable($tableName, $createSQL, false); // no Alter queries passed ...
+					setupTable($tableName, $createSQL, false); 
 				}
 			}else{ 
 				echo str_replace("<TableName>", $tableName, $Translation["creating table"]);
