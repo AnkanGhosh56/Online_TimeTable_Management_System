@@ -13,10 +13,10 @@
 	if(!count($p)) exit;
 
 	
-	$t = $_GET['t']; // table name
-	$f = $_GET['f']; // field name
-	$v = $_GET['v']; // thumbnail view type: 'tv' or 'dv'
-	$i = $_GET['i']; // original image file name
+	$t = $_GET['t']; 
+	$f = $_GET['f']; 
+	$v = $_GET['v']; 
+	$i = $_GET['i']; 
 
 	
 	if(!in_array($t, array_keys($p)))  getImage();
