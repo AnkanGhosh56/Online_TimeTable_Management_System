@@ -66,7 +66,7 @@
 			}
 		}
 
-		if($res=@db_query("select count(1) from `$tableName`")){ // table already exists
+		if($res=@db_query("select count(1) from `$tableName`")){
 			if($row = @db_fetch_array($res)){
 				echo str_replace("<TableName>", $tableName, str_replace("<NumRecords>", $row[0],$Translation["table exists"]));
 				if(is_array($arrAlter)){
