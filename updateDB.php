@@ -25,7 +25,7 @@
 		setupIndexes('notices', array('school','department'));
 
 
-		// save MD5
+		
 		if($fp=@fopen(dirname(__FILE__).'/setup.md5', 'w')){
 			fwrite($fp, $thisMD5);
 			fclose($fp);
