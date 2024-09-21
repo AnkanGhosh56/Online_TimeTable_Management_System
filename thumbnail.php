@@ -41,7 +41,7 @@
 			$exit = true;
 		}
 
-		/* force caching */
+		
 		$last_modified = filemtime($img);
 		$last_modified_gmt = gmdate('D, d M Y H:i:s', $last_modified) . ' GMT';
 		$expires_gmt = gmdate('D, d M Y H:i:s', $last_modified + 864000) . ' GMT';
