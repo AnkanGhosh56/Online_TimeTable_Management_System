@@ -1,11 +1,11 @@
 <?php
-	// check this file's MD5 to make sure it wasn't called before
+	
 	$prevMD5=@implode('', @file(dirname(__FILE__).'/setup.md5'));
 	$thisMD5=md5(@implode('', @file("./updateDB.php")));
 	if($thisMD5==$prevMD5){
 		$setupAlreadyRun=true;
 	}else{
-		// set up tables
+		
 		if(!isset($silent)){
 			$silent=true;
 		}
