@@ -58,7 +58,7 @@
 
 		echo '<div style="padding: 5px; border-bottom:solid 1px silver; font-family: verdana, arial; font-size: 10px;">';
 
-		// is there a table rename query?
+		
 		if(is_array($arrAlter)){
 			$matches=array();
 			if(preg_match("/ALTER TABLE `(.*)` RENAME `$tableName`/", $arrAlter[0], $matches)){
