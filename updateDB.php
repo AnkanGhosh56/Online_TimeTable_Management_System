@@ -106,7 +106,7 @@
 				}else{ // if old tableName doesn't exist (nor the new one since we're here), then just create the table.
 					setupTable($tableName, $createSQL, false); // no Alter queries passed ...
 				}
-			}else{ // tableName doesn't exist and no rename, so just create the table
+			}else{ 
 				echo str_replace("<TableName>", $tableName, $Translation["creating table"]);
 				if(!@db_query($createSQL)){
 					echo '<span class="label label-danger">' . $Translation['failed'] . '</span>';
