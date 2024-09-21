@@ -10,7 +10,7 @@
 			$silent=true;
 		}
 
-		// set up tables
+		
 		setupTable('schools', "create table if not exists `schools` (   `id` INT unsigned not null auto_increment , primary key (`id`), `name` VARCHAR(40) not null ) CHARSET utf8", $silent);
 		setupTable('departments', "create table if not exists `departments` (   `id` INT unsigned not null auto_increment , primary key (`id`), `name` VARCHAR(40) not null , `school` INT unsigned not null ) CHARSET utf8", $silent);
 		setupIndexes('departments', array('school'));
