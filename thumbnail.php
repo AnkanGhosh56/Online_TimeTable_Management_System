@@ -6,7 +6,7 @@
 
 	handle_maintenance();
 
-	// image paths
+	
 	$p=array(   
 	);
 
