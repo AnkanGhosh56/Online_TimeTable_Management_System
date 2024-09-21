@@ -103,7 +103,7 @@
 					}
 
 					if(is_array($arrAlter)) setupTable($tableName, $createSQL, false, $arrAlter); // execute Alter queries on renamed table ...
-				}else{ // if old tableName doesn't exist (nor the new one since we're here), then just create the table.
+				}else{ 
 					setupTable($tableName, $createSQL, false); // no Alter queries passed ...
 				}
 			}else{ 
