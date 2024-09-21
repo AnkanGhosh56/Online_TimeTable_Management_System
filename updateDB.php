@@ -92,7 +92,7 @@
 
 			if($oldTableName!=''){ // if we have a table rename query
 				if($ro=@db_query("select count(1) from `$oldTableName`")){ 
-					$renameQuery=array_shift($arrAlter); // get and remove rename query
+					$renameQuery=array_shift($arrAlter); 
 
 					echo "$renameQuery ... ";
 					if(!@db_query($renameQuery)){
