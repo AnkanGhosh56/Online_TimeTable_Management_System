@@ -91,7 +91,7 @@
 		}else{ 
 
 			if($oldTableName!=''){ // if we have a table rename query
-				if($ro=@db_query("select count(1) from `$oldTableName`")){ // if old table exists, rename it.
+				if($ro=@db_query("select count(1) from `$oldTableName`")){ 
 					$renameQuery=array_shift($arrAlter); // get and remove rename query
 
 					echo "$renameQuery ... ";
