@@ -12,7 +12,7 @@
 
 	if(!count($p)) exit;
 
-	// receive user input
+	
 	$t = $_GET['t']; // table name
 	$f = $_GET['f']; // field name
 	$v = $_GET['v']; // thumbnail view type: 'tv' or 'dv'
