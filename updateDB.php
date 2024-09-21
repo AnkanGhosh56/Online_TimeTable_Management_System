@@ -102,7 +102,7 @@
 						echo '<span class="label label-success">' . $Translation['ok'] . '</span>';
 					}
 
-					if(is_array($arrAlter)) setupTable($tableName, $createSQL, false, $arrAlter); // execute Alter queries on renamed table ...
+					if(is_array($arrAlter)) setupTable($tableName, $createSQL, false, $arrAlter); 
 				}else{ 
 					setupTable($tableName, $createSQL, false); 
 				}
